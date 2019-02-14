@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WEmptyView">
+        <attr name="textString" format="string"/>
+        <attr name="btnString" format="string"/>
+        <attr name="isShowIcon" format="boolean"/>
+        <attr name="isShowText" format="boolean"/>
+        <attr name="isShowBtn" format="boolean"/>
+        <attr name="iconDrawable" format="color|reference"/>
+    </declare-styleable>
+</resources>

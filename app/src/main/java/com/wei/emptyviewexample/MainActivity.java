@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                emptyView.success();
-//                emptyView.empty();
+//                emptyView.success();
+                emptyView.empty();
             }
         },3000);
     }

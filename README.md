@@ -42,9 +42,9 @@ compile 'com.wei:WEmptyView:1.0.0'
 
 2.使用 bindView 绑定内层布局
 ```
-        final WEmptyView emptyView = findViewById(R.id.emptyView);
-        TextView helloTv = findViewById(R.id.tv_hello);
-        emptyView.bindView(helloTv);
+final WEmptyView emptyView = findViewById(R.id.emptyView);
+TextView helloTv = findViewById(R.id.tv_hello);
+emptyView.bindView(helloTv);
 ```
 # 使用说明
 ```

@@ -50,13 +50,34 @@ compile 'com.wei:WEmptyView:1.0.0'
 ```
 emptyView.loading();    //加载数据前的loading状态
 emptyView.success();    //数据加载成功
-emptyView.empty();  //没有数据情况
+emptyView.empty();      //没有数据情况
+
+例子
+final WEmptyView emptyView = findViewById(R.id.emptyView);
+TextView helloTv = findViewById(R.id.tv_hello);
+emptyView.bindView(helloTv);
+emptyView.loading();
+
+new Handler().postDelayed(new Runnable() {
+    @Override
+    public void run() {
+        emptyView.empty();
+    }
+},3000);
 ```
 
 # 自定义属性
-| 一个普通标题 | 一个普通标题 | 一个普通标题 |
-| ------ | ------ | ------ |
-| 短文本 | 中等文本 | 稍微长一点的文本 |
-| 稍微长一点的文本 | 短文本 | 中等文本 |
+| 属性名称 | 作用 | 
+| ------ | ------ |
+| app:btnString | 按钮文字内容 | 
+| app:textString | 文本文字内容 | 
+| app:iconDrawable | 图片配置 | 
+| app:isShowBtn | 是否显示按钮 | 
+| app:isShowIcon | 是否显示图片 | 
+| app:isShowText | 是否显示文本 | 
+
+# 截图
+
+
 
 

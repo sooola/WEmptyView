@@ -10,6 +10,10 @@
         android:id="@+id/emptyView"
         app:btnString="hahahaha"
         app:textString="暂无数据"
+        app:iconDrawable="@mipmap/ic_launcher"
+        app:isShowBtn="true"
+        app:isShowIcon="true"
+        app:isShowText="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

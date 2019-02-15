@@ -76,7 +76,10 @@ new Handler().postDelayed(new Runnable() {
 | app:isShowIcon | 是否显示图片 | 
 | app:isShowText | 是否显示文本 | 
 
-# 截图
+# 截图  
+![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/loading.jpg)
+
+![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/empty.jpg)
 
 
 

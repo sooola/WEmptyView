@@ -77,9 +77,9 @@ new Handler().postDelayed(new Runnable() {
 | app:isShowText | 是否显示文本 | 
 
 # 截图  
-![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/loading.jpg)
+![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/loading.png)
 
-![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/empty.jpg)
+![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/empty.png)
 
 
 

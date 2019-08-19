@@ -3,6 +3,7 @@ package com.wei.emptyview;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
@@ -125,6 +126,14 @@ public class WEmptyView extends FrameLayout {
         mButton.setVisibility(View.GONE);
         mTextView.setVisibility(View.GONE);
         mClickEnable = false;
+    }
+
+    public void setBtnBackgroundResource(int resid){
+        mButton.setBackgroundResource(resid);
+    }
+
+    public void setBtnBackg(Drawable background){
+        mButton.setBackground(background);
     }
 
     public void success() {

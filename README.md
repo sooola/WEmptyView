@@ -2,15 +2,24 @@
 一个通用的错误布局，用于在数据显示前的loading界面，与没数据的错误界面，免除每次重复写布局文件。
 
 # 导入  
+1.在根目录的build.gradle 
 ```
-compile 'com.wei:WEmptyView:1.0.0'
+allprojects {
+		repositories {
+			...
+			maven { url 'https://www.jitpack.io' }
+		}
+	}
+```
+2.在项目build.gradle 
+```
+compile 'com.github.sooola:WEmptyView:1.0'
 ```
 
 # 使用   
 1.在布局外层包裹 WEmptyView
 ```
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -37,7 +46,7 @@ compile 'com.wei:WEmptyView:1.0.0'
 
     </com.wei.emptyview.WEmptyView>
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
 ```
 
 2.使用 bindView 绑定内层布局

@@ -13,7 +13,7 @@ allprojects {
 ```
 2.在项目build.gradle 
 ```
-compile 'com.github.sooola:WEmptyView:1.0'
+compile 'com.github.sooola:WEmptyView:1.1'
 ```
 
 # 使用   

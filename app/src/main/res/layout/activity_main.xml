@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <com.wei.emptyview.WEmptyView
         android:id="@+id/emptyView"
-        app:btnString="hahahaha"
-        app:textString="暂无数据"
-        app:iconDrawable="@mipmap/ic_launcher"
-        app:isShowBtn="true"
-        app:isShowIcon="true"
-        app:isShowText="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -21,13 +17,16 @@
             android:id="@+id/tv_hello"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="36dp"
+            android:layout_gravity="center"
             android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textSize="36dp" />
 
-    </com.wei.emptyview.WEmptyView>
+        <Button
+            android:id="@+id/btn_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="重新加载" />
+    </RelativeLayout>
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

@@ -3,6 +3,9 @@
     <declare-styleable name="WEmptyView">
         <attr name="textString" format="string"/>
         <attr name="btnString" format="string"/>
+        <attr name="defNoNetworkTextString" format="string"/>
+        <attr name="defNoNetworkBtnTextString" format="string"/>
+        <attr name="defNoNetworkIcon" format="color|reference"/>
         <attr name="isShowIcon" format="boolean"/>
         <attr name="isShowText" format="boolean"/>
         <attr name="isShowBtn" format="boolean"/>

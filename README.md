@@ -81,20 +81,16 @@ new Handler().postDelayed(new Runnable() {
 ```
 
 # 自定义属性
-| 属性名称 | 作用 | 
-| ------ | ------ |
-| app:btnString | 按钮文字内容 | 
-| app:textString | 文本文字内容 | 
-| app:iconDrawable | 图片配置 | 
-| app:isShowBtn | 是否显示按钮 | 
-| app:isShowIcon | 是否显示图片 | 
-| app:isShowText | 是否显示文本 | 
+| 属性名称         | 作用         |
+| ---------------- | ------------ |
+| app:btnString    | 按钮文字内容 |
+| app:textString   | 文本文字内容 |
+| app:iconDrawable | 图片配置     |
+| app:isShowBtn    | 是否显示按钮 |
+| app:isShowIcon   | 是否显示图片 |
+| app:isShowText   | 是否显示文本 |
 
 # 截图  
 ![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/loading.png)
 
 ![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/empty.png)
-
-
-
-

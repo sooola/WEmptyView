@@ -25,6 +25,7 @@ compile 'com.github.sooola:WEmptyView:1.2'
 ```
 
 # 使用   
+可以使用以下任意一种方式，bindView方式适合单一元素布局，如只有RecycleView情况
 1.在布局外层加入 WEmptyView
 ```
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"

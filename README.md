@@ -1,6 +1,8 @@
 # WEmptyView
 快速集成Android空白页面占位图
 
+
+
 # 导入  
 1.在根目录的build.gradle 
 ```
@@ -17,19 +19,14 @@ compile 'com.github.sooola:WEmptyView:1.1'
 ```
 
 # 使用   
-1.在布局外层包裹 WEmptyView
+1.在布局外层加入 WEmptyView
 ```
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <com.wei.emptyview.WEmptyView
-        android:id="@+id/emptyView"
-        app:btnString="hahahaha"
-        app:textString="暂无数据"
+    <RelativeLayout
+        android:id="@+id/rl_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -37,14 +34,22 @@ compile 'com.github.sooola:WEmptyView:1.1'
             android:id="@+id/tv_hello"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="36dp"
+            android:layout_gravity="center"
             android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textSize="36dp" />
 
-    </com.wei.emptyview.WEmptyView>
+        <Button
+            android:id="@+id/btn_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="重新加载" />
+    </RelativeLayout>
+    
+        <com.wei.emptyview.WEmptyView
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </RelativeLayout>
 ```

@@ -3,12 +3,11 @@
 
 ![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/GIF.gif)
 
-##EmptyView 提供的元素
+##EmptyView 提供的元素  
+
+每项可单独配置，是否显示  
 ![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/25.png)
 ![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/24.png)
-![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/23.png)
-![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/22.png)
-![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/21.png)
 
 # 导入  
 1.在根目录的build.gradle 

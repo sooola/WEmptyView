@@ -1,7 +1,14 @@
 # WEmptyView
 快速集成Android空白页面占位图
 
+![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/GIF.gif)
 
+##EmptyView 提供的元素
+![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/25.png)
+![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/24.png)
+![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/23.png)
+![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/22.png)
+![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/21.png)
 
 # 导入  
 1.在根目录的build.gradle 
@@ -85,12 +92,11 @@ new Handler().postDelayed(new Runnable() {
 | ---------------- | ------------ |
 | app:btnString    | 按钮文字内容 |
 | app:textString   | 文本文字内容 |
-| app:iconDrawable | 图片配置     |
+| app:iconDrawable | 默认图片配置     |
 | app:isShowBtn    | 是否显示按钮 |
 | app:isShowIcon   | 是否显示图片 |
 | app:isShowText   | 是否显示文本 |
+| app:defNoNetworkIcon   | 无网络状态默认图片 |
+| app:defNoNetworkTextString   | 无网络状态默认文字 |
+| app:defNoNetworkBtnTextString   | 无网络状态默认按钮文字 |
 
-# 截图  
-![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/loading.png)
-
-![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/empty.png)

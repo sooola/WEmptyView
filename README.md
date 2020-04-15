@@ -1,7 +1,13 @@
 # WEmptyView
 快速集成Android空白页面占位图
 
+![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/GIF.gif)
 
+### EmptyView 提供的元素  
+
+每项可单独配置，是否显示  
+![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/25.png)
+![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/24.png)
 
 # 导入  
 1.在根目录的build.gradle 
@@ -15,10 +21,11 @@ allprojects {
 ```
 2.在项目build.gradle 
 ```
-compile 'com.github.sooola:WEmptyView:1.1'
+compile 'com.github.sooola:WEmptyView:1.2'
 ```
 
 # 使用   
+可以使用以下任意一种方式，bindView方式适合单一元素布局，如只有RecycleView情况
 1.在布局外层加入 WEmptyView
 ```
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -85,12 +92,11 @@ new Handler().postDelayed(new Runnable() {
 | ---------------- | ------------ |
 | app:btnString    | 按钮文字内容 |
 | app:textString   | 文本文字内容 |
-| app:iconDrawable | 图片配置     |
+| app:iconDrawable | 默认图片配置     |
 | app:isShowBtn    | 是否显示按钮 |
 | app:isShowIcon   | 是否显示图片 |
 | app:isShowText   | 是否显示文本 |
+| app:defNoNetworkIcon   | 无网络状态默认图片 |
+| app:defNoNetworkTextString   | 无网络状态默认文字 |
+| app:defNoNetworkBtnTextString   | 无网络状态默认按钮文字 |
 
-# 截图  
-![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/loading.png)
-
-![image](https://github.com/sooola/WEmptyView/blob/master/screenshots/empty.png)

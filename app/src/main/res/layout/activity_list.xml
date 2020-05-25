@@ -36,6 +36,7 @@
         android:id="@+id/emptyView"
         android:layout_above="@id/rl_bottom"
         app:isShowBtn="true"
+        app:defProgressColor="#E91E63"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

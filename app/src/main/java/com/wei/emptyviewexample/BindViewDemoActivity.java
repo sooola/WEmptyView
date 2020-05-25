@@ -25,7 +25,6 @@ public class BindViewDemoActivity extends AppCompatActivity {
         Button reloadBtn = findViewById(R.id.btn_reload);
         View mainView = findViewById(R.id.rl_main);
         emptyView.bindView(mainView);
-        emptyView.setProgressBarColor(R.color.colorAccent);
         emptyView.success();
 
         reloadBtn.setOnClickListener(new View.OnClickListener() {

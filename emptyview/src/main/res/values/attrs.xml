@@ -10,5 +10,6 @@
         <attr name="isShowText" format="boolean"/>
         <attr name="isShowBtn" format="boolean"/>
         <attr name="iconDrawable" format="color|reference"/>
+        <attr name="defProgressColor" format="color"/>
     </declare-styleable>
 </resources>

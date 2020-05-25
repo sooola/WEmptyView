@@ -3,7 +3,6 @@ package com.wei.emptyview;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
-import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.View;
@@ -12,6 +11,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import com.github.ybq.android.spinkit.SpinKitView;
 
 /**
  * Created by wei on 2019/2/12.
@@ -27,7 +28,7 @@ public class WEmptyView extends FrameLayout {
     private OnClickListener mListener;
     private boolean mClickEnable = true;
 
-    private ProgressBar mProgressBar;
+    private SpinKitView mProgressBar;
     private TextView mTextView;
     private int mDefEmptyIcon;
     public ImageView mImg;
@@ -40,6 +41,7 @@ public class WEmptyView extends FrameLayout {
     private String mDefNoNetworkText;
     private String mDefNoNetworkBtnText;
     private int mDefNoNetworkImg;
+    private int mProgressColor;
 
     public WEmptyView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -69,8 +71,9 @@ public class WEmptyView extends FrameLayout {
         mIsShowIcon = ta.getBoolean(R.styleable.WEmptyView_isShowIcon ,true);
         mIsShowText = ta.getBoolean(R.styleable.WEmptyView_isShowText ,true);
         mIsShowButton = ta.getBoolean(R.styleable.WEmptyView_isShowBtn ,false);
-        mDefEmptyIcon = ta.getResourceId(R.styleable.WEmptyView_iconDrawable , R.mipmap.pop_failure);
+        mDefEmptyIcon = ta.getResourceId(R.styleable.WEmptyView_iconDrawable , R.mipmap.no_data);
         mDefNoNetworkImg = ta.getResourceId(R.styleable.WEmptyView_defNoNetworkIcon , R.mipmap.no_wifi);
+        mProgressColor = ta.getColor(R.styleable.WEmptyView_defProgressColor , Color.WHITE);
         ta.recycle();
         init();
     }
@@ -81,7 +84,8 @@ public class WEmptyView extends FrameLayout {
         mTextView = view.findViewById(R.id.tv_empty_text);
         mButton = view.findViewById(R.id.btn_empty_btn);
         mRootView = view.findViewById(R.id.rl_root);
-        mProgressBar = view.findViewById(R.id.progressbar);
+        mProgressBar = view.findViewById(R.id.progress);
+        mProgressBar.setColor(mProgressColor);
         setBackgroundColor(-1);
         mImg.setImageResource(mDefEmptyIcon);
         mButton.setOnClickListener(new OnClickListener() {
@@ -99,6 +103,10 @@ public class WEmptyView extends FrameLayout {
 
     public void setRootViewBackgroundColor(String colorString) {
         mRootView.setBackgroundColor(Color.parseColor(colorString));
+    }
+
+    public void setProgressColor(int color){
+        mProgressBar.setColor(color);
     }
 
     public void setImgBackgroundResource(int backgroundRes){
@@ -273,14 +281,6 @@ public class WEmptyView extends FrameLayout {
      */
     public void setOnBtnClickListener(OnClickListener listener) {
         this.mListener = listener;
-    }
-
-    /**
-     *
-     * @param colorRes  color资源文件
-     */
-    public void setProgressBarColor(int colorRes){
-        mProgressBar.getIndeterminateDrawable().setColorFilter(getResources().getColor(colorRes), PorterDuff.Mode.SRC_IN);
     }
 
     public ProgressBar getProgressBar(){

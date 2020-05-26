@@ -17,11 +17,6 @@ android {
         }
     }
 
-    repositories {
-        flatDir {
-            dirs project(':emptyview').file('libs')
-        }
-    }
 }
 
 dependencies {

@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.github.ybq.android.spinkit.SpinKitView;
+import com.wei.emptyview.spinkit.SpinKitView;
 
 /**
  * Created by wei on 2019/2/12.

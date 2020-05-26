@@ -23,6 +23,7 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:recyclerview-v7:28.0.0'
     implementation 'com.github.sooola:RecycleViewLoadmoreAdapter:1.2'
-    api project(path: ':emptyview')
+//    api project(path: ':emptyview')
+    api  'com.github.sooola:WEmptyView:2.1'
 
 }

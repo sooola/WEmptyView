@@ -21,15 +21,16 @@ android {
         }
     }
 
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
 }
 
 dependencies {
-    api fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation ('com.github.ybq:Android-SpinKit:1.4.0'){
-        //不同版本同时被依赖时，那么强制依赖这个版本的，默认false
-        force = true
-        //禁止依赖的传递，gradle自动添加子依赖项（依赖包所需的依赖），设置为false，则需要手动添加每个子依赖项，默认为true。
-        transitive = true
-    }
+    implementation (name: 'spinkit', ext: 'aar')
 }
